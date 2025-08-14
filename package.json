@@ -1,0 +1,26 @@
+{
+  "name": "test-static-repo-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "rimraf dist && babel . --out-dir dist --ignore node_modules,dist",
+    "start": "node dist/index.js",
+    "start:local": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1"
+  }
+}
